@@ -1,0 +1,5 @@
+add-migration initial2 -context ApplicationDbContext
+add-migration initialIdentity2 -context IdentityContext
+
+update-database -context IdentityContext
+update-database -context ApplicationDbContext
