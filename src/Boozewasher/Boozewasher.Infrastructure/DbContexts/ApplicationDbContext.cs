@@ -8,6 +8,7 @@ using System.Data;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Boozewasher.Domain.Entities;
 
 namespace Boozewasher.Infrastructure.DbContexts
 {
@@ -23,6 +24,13 @@ namespace Boozewasher.Infrastructure.DbContexts
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<Attendance> Attendances { get; set; }
+        public DbSet<Branch> Branches { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Item> Items { get; set; }
+        public DbSet<Service> Services { get; set; }
+        public DbSet<Transaction> Transactions { get; set; }
+        public DbSet<Vehicle> Vehicles { get; set; }
 
         public IDbConnection Connection => Database.GetDbConnection();
 
