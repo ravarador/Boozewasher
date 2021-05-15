@@ -21,4 +21,34 @@
   <ItemGroup>
     <ProjectReference Include="..\Boozewasher.Domain\Boozewasher.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Attendances\Commands\Create\" />
+    <Folder Include="Features\Attendances\Commands\Delete\" />
+    <Folder Include="Features\Attendances\Commands\Update\" />
+    <Folder Include="Features\Attendances\Queries\" />
+    <Folder Include="Features\Branches\Commands\Create\" />
+    <Folder Include="Features\Branches\Commands\Delete\" />
+    <Folder Include="Features\Branches\Commands\Update\" />
+    <Folder Include="Features\Branches\Queries\" />
+    <Folder Include="Features\Employees\Commands\Create\" />
+    <Folder Include="Features\Employees\Commands\Delete\" />
+    <Folder Include="Features\Employees\Commands\Update\" />
+    <Folder Include="Features\Employees\Queries\" />
+    <Folder Include="Features\Items\Commands\Create\" />
+    <Folder Include="Features\Items\Commands\Delete\" />
+    <Folder Include="Features\Items\Commands\Update\" />
+    <Folder Include="Features\Items\Queries\" />
+    <Folder Include="Features\Services\Commands\Create\" />
+    <Folder Include="Features\Services\Commands\Delete\" />
+    <Folder Include="Features\Services\Commands\Update\" />
+    <Folder Include="Features\Services\Queries\" />
+    <Folder Include="Features\Transactions\Commands\Create\" />
+    <Folder Include="Features\Transactions\Commands\Delete\" />
+    <Folder Include="Features\Transactions\Commands\Update\" />
+    <Folder Include="Features\Transactions\Queries\" />
+    <Folder Include="Features\Vehicles\Commands\Create\" />
+    <Folder Include="Features\Vehicles\Commands\Delete\" />
+    <Folder Include="Features\Vehicles\Commands\Update\" />
+    <Folder Include="Features\Vehicles\Queries\" />
+  </ItemGroup>
 </Project>
