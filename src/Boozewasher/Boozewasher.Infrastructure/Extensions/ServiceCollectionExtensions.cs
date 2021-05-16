@@ -28,6 +28,8 @@ namespace Boozewasher.Infrastructure.Extensions
             services.AddTransient<IProductCacheRepository, ProductCacheRepository>();
             services.AddTransient<IBrandRepository, BrandRepository>();
             services.AddTransient<IBrandCacheRepository, BrandCacheRepository>();
+            services.AddTransient<IBranchRepository, BranchRepository>();
+            services.AddTransient<IBranchCacheRepository, BranchCacheRepository>();
             services.AddTransient<ILogRepository, LogRepository>();
             services.AddTransient<IUnitOfWork, UnitOfWork>();
 
