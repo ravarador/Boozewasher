@@ -60,10 +60,38 @@
                                     <p>@localizer["Manage Employees"]</p>
                                 </a>
                             </li>
+                        </ul>
+                    </li>
+                    <li @*is-active-route asp-area="Catalog"*@ class="nav-item has-treeview">
+                        <a is-active-route asp-area="Branches" class="nav-link">
+                            <i class="nav-icon fas fa-archive"></i>
+                            <p>
+                                @localizer["Branches"]
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a is-active-route asp-area="Employees" asp-controller="WorkflowReports" class="nav-link">
+                                <a is-active-route asp-area="Branches" asp-controller="Manage" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
-                                    <p>@localizer["View Attendance"]</p>
+                                    <p>@localizer["Manage Branches"]</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li @*is-active-route asp-area="Catalog"*@ class="nav-item has-treeview">
+                        <a is-active-route asp-area="Services" class="nav-link">
+                            <i class="nav-icon fas fa-archive"></i>
+                            <p>
+                                @localizer["Services"]
+                                <i class="right fas fa-angle-left"></i>
+                            </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a is-active-route asp-area="Services" asp-controller="Manage" class="nav-link">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>@localizer["Manage Services"]</p>
                                 </a>
                             </li>
                         </ul>
@@ -72,22 +100,22 @@
                 }
                 <li class="nav-header">@localizer["Master"]</li>
                 @*<li is-active-route asp-area="Utilities" class="nav-item has-treeview">
-                    <a is-active-route asp-area="Utilities" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            @localizer["Utlities"]
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
+            <a is-active-route asp-area="Utilities" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                    @localizer["Utlities"]
+                    <i class="right fas fa-angle-left"></i>
+                </p>
+            </a>
+            <ul class="nav nav-treeview">
+                <li class="nav-item">
+                    <a is-active-route class="nav-link">
+                        <i class="far fa-file-archive nav-icon"></i>
+                        <p>@localizer["Document"]</p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a is-active-route class="nav-link">
-                                <i class="far fa-file-archive nav-icon"></i>
-                                <p>@localizer["Document"]</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>*@
+                </li>
+            </ul>
+        </li>*@
                 <li is-active-route asp-area="Catalog" class="nav-item has-treeview">
                     <a is-active-route asp-area="Catalog" class="nav-link">
                         <i class="nav-icon fas fa-archive"></i>
