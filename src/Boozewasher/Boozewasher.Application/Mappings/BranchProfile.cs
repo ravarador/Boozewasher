@@ -1,11 +1,8 @@
 ﻿using AutoMapper;
 using Boozewasher.Application.Features.Branches.Commands.Create;
+using Boozewasher.Application.Features.Branches.Queries.GetAllCached;
+using Boozewasher.Application.Features.Branches.Queries.GetById;
 using Boozewasher.Domain.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Boozewasher.Application.Mappings
 {
@@ -14,8 +11,8 @@ namespace Boozewasher.Application.Mappings
         public BranchProfile()
         {
             CreateMap<CreateBranchCommand, Branch>().ReverseMap();
-            //CreateMap<GetBranchByIdResponse, Branch>().ReverseMap();
-            //CreateMap<GetAllBranchsCachedResponse, Branch>().ReverseMap();
+            CreateMap<GetBranchByIdResponse, Branch>().ReverseMap();
+            CreateMap<GetAllBranchesCachedResponse, Branch>().ReverseMap();
         }
     }
 }

@@ -30,6 +30,7 @@ namespace Boozewasher.Web.Areas.Admin.Controllers
             var model = new PermissionViewModel();
             var allPermissions = new List<RoleClaimsViewModel>();
             allPermissions.GetPermissions(typeof(Permissions.Brands), roleId);
+            allPermissions.GetPermissions(typeof(Permissions.Branches), roleId);
             allPermissions.GetPermissions(typeof(Permissions.Dashboard), roleId);
             allPermissions.GetPermissions(typeof(Permissions.Products), roleId);
             allPermissions.GetPermissions(typeof(Permissions.Users), roleId);

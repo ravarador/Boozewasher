@@ -46,5 +46,13 @@ namespace Boozewasher.Application.Constants
             public const string Edit = "Permissions.Brands.Edit";
             public const string Delete = "Permissions.Brands.Delete";
         }
+
+        public static class Branches
+        {
+            public const string View = "Permissions.Branches.View";
+            public const string Create = "Permissions.Branches.Create";
+            public const string Edit = "Permissions.Branches.Edit";
+            public const string Delete = "Permissions.Branches.Delete";
+        }
     }
 }

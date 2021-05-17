@@ -28,7 +28,6 @@
     <Folder Include="Features\Attendances\Queries\" />
     <Folder Include="Features\Branches\Commands\Delete\" />
     <Folder Include="Features\Branches\Commands\Update\" />
-    <Folder Include="Features\Branches\Queries\" />
     <Folder Include="Features\Employees\Commands\Create\" />
     <Folder Include="Features\Employees\Commands\Delete\" />
     <Folder Include="Features\Employees\Commands\Update\" />

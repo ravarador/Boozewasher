@@ -62,8 +62,8 @@
                             </li>
                         </ul>
                     </li>
-                    <li @*is-active-route asp-area="Catalog"*@ class="nav-item has-treeview">
-                        <a is-active-route asp-area="Branches" class="nav-link">
+                    <li is-active-route asp-area="Branch" class="nav-item has-treeview">
+                        <a is-active-route asp-area="Branch" class="nav-link">
                             <i class="nav-icon fas fa-archive"></i>
                             <p>
                                 @localizer["Branches"]
@@ -72,7 +72,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a is-active-route asp-area="Branches" asp-controller="Manage" class="nav-link">
+                                <a is-active-route asp-area="Branch" asp-controller="Branch" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>@localizer["Manage Branches"]</p>
                                 </a>
@@ -80,7 +80,7 @@
                         </ul>
                     </li>
                     <li @*is-active-route asp-area="Catalog"*@ class="nav-item has-treeview">
-                        <a is-active-route asp-area="Services" class="nav-link">
+                        <a is-active-route asp-area="Service" class="nav-link">
                             <i class="nav-icon fas fa-archive"></i>
                             <p>
                                 @localizer["Services"]
@@ -89,7 +89,7 @@
                         </a>
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
-                                <a is-active-route asp-area="Services" asp-controller="Manage" class="nav-link">
+                                <a is-active-route asp-area="Service" asp-controller="Manage" class="nav-link">
                                     <i class="far fa-circle nav-icon"></i>
                                     <p>@localizer["Manage Services"]</p>
                                 </a>
